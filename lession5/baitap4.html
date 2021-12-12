@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="nhap1"></input>
+    <input id="nhap2"></input>
+    <input id="nhap3"></input>
+    <button onclick="hienthi()">Click</button>
+    <script>
+        function hienthi() {
+            var bien1 = document.getElementById("nhap1").value
+            var bien2 = document.getElementById("nhap2").value
+            var bien3 = document.getElementById("nhap3").value
+            // var jason = "tên" + " " + ":" + " " + bien1
+            // var jason2 = "tuổi" + " " + ":" + " " + bien2
+            // var jason3 = "nghề nghiệp" + " " + ":" + " " + bien3
+            // var jaSon1 = JSON.stringify(jason)
+            // var jaSon2 = JSON.stringify(jason2)
+            // var jaSon = JSON.stringify(jason3)
+
+            // console.log(jaSon1)
+            // console.log(jaSon2)
+            // console.log(jaSon)
+            // function person(name,age,job){
+            //     this.name=name
+            //     this.age=age
+            //     this.job=job
+            // }
+            // var giaTrinhap=person(bien1,bien2,bien3)
+            // console.log(giaTrinhap)
+            var bien22 = parseInt(bien2)
+            if (isNaN(bien2)) {
+                console.log("nhập sai rồi, nhập lại")
+                return
+            }
+            
+            var giaTrinhap = {
+                name: bien1,
+                age: bien2,
+                job: bien3
+            }
+            var json = JSON.stringify(giaTrinhap)
+            console.log(json)
+
+        }
+    </script>
+
+</body>
+
+</html>

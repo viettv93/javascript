@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mang = [{ name: 'K', age: 2 },
+        { name: 'B', age: 24 },
+        { name: 'C', age: 27 },
+        { name: 'E', age: 12 },
+        { name: 'H', age: 1 },
+        { name: 'L', age: 5 },
+        { name: 'K', age: 10 },
+        { name: 'K', age: 99 }]
+        var index = 0;
+        var c, d;
+        var min = mang[0].age
+
+        while (index < mang.length) {
+            var person = mang[index];
+            if (person.name.toLowerCase() == 'c') {
+                c = person
+            }
+
+            if (min > person.age) {
+                min = person.age
+            }
+
+            if (person.age == min) {
+                d = person
+            }
+
+            index++
+        }
+
+        console.log(c)
+        console.log(`người trẻ nhất là ${JSON.stringify(d)}`)
+    </script>
+
+</body>
+
+</html>

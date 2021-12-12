@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mang = [5, 10, 15, 0, 4, 9, 72]
+        var founded = true;
+        var min = mang[0];
+        var index = 0
+        while (founded) {
+            if (min > mang[index])
+                min = mang[index]
+            index++
+
+            if (index > mang.length)
+                founded = false;
+            //     break
+            // console.log(index)
+        }
+
+        console.log(min)
+    </script>
+
+</body>
+
+</html>
