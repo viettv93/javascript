@@ -13,12 +13,11 @@
         var mang2=mang.map(ghepMang)
         function ghepMang(value,index=0,array){
             if (mang[index].toLowerCase == 'học'){
-             var x=mang.slice(0,index)
-             var y=mang.slice(index,mang.length)
-             var z=x+mang1
-             var k=z+y
-            return k
+             var x=mang.slice(0,index+1)
+             var y=mang.slice(index+1,)
+             var k=x.concat(mang1,y)
             }
+
 
         }
         console.log(mang2)
